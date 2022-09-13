@@ -1,27 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap');
+
+$background-color: #080B24;
+$text-color: #ffffffff;
+$accent-color: #ff659fff;
+
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: $text-color;
+}
+
 html {
-    background: url(assets/bg.jpg) no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
+    background: url(assets/images/bg.jpg) no-repeat center center fixed;
     background-size: cover;
+    height: 100%;
+    background-color: $background-color;
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
 }
 
 .flex {
     display: flex;
+}
+
+.align-center {
     align-items: center;
-    justify-content: space-evenly;
-    height: calc(100vh + 200px);
 }
 
-p {
-    background-color: rgb(95, 69, 69);
-    color: #fff;
+/* Style the top navigation bar */
+.topnav {
+    overflow: hidden;
+    background-color: $background-color;
+    display: flex;
+    align-items: center;
+    &--logo {
+        font-size: 2rem;
+        font-weight: 700;
+        color: $accent-color;
+        margin-right: 1rem;
+        &:hover {
+            color: rgb(255, 64, 137) !important;
+        }
+    }
+    & a {
+        display: block;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+
+        &:hover {
+            color: $accent-color;
+        }
+    }
 }
 
-a {
-    text-decoration: none;
-    color: #fff;
-    &:hover {
-        background-color: rgb(114, 55, 101);
+.content {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.footer {
+    margin-top: auto;
+    background-color: $background-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+
+    & a {
+        display: block;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+
+        &:hover {
+            color: $accent-color;
+        }
     }
 }
