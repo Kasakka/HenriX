@@ -1,3 +1,3 @@
-# sycamore_site
+# Sycamore Site
 
 Sycamore site sampling
