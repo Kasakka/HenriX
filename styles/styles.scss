@@ -1,7 +1,16 @@
+html {
+    background: url(assets/bg.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
 .flex {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    height: calc(100vh + 200px);
 }
 
 p {
@@ -9,6 +18,10 @@ p {
     color: #fff;
 }
 
-body {
-    background-color: black;
+a {
+    text-decoration: none;
+    color: #fff;
+    &:hover {
+        background-color: rgb(114, 55, 101);
+    }
 }

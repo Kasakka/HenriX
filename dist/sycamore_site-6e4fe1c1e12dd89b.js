@@ -376,7 +376,7 @@ function initSync(module) {
 
 async function init(input) {
     if (typeof input === 'undefined') {
-        input = new URL('sycamore_site-9295e81f96314e12_bg.wasm', import.meta.url);
+        input = new URL('sycamore_site-6e4fe1c1e12dd89b_bg.wasm', import.meta.url);
     }
     const imports = getImports();
 
