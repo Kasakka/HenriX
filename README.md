@@ -1,3 +1,3 @@
-# Sycamore Site
+# HenriX
 
 Sycamore site sampling
