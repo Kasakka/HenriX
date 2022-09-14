@@ -15,7 +15,6 @@ fn NavBar<G: Html>(cx: Scope) -> View<G> {
 #[component]
 fn Content<G: Html>(cx: Scope) -> View<G> {
     view! { cx,
-        section(class="content"){
             div(class="intro"){
                 h1(class="intro--title") {"HENRI MATERO"}
                 p(class="intro--lead") {"Tähän joku pikku insert meikästä ja ehkä pinkkejä keywordejä?"}
@@ -36,7 +35,6 @@ fn Content<G: Html>(cx: Scope) -> View<G> {
                     }
                 }
             }
-        }
     }
 }
 
