@@ -21,15 +21,15 @@ fn Content<G: Html>(cx: Scope) -> View<G> {
             }
             section(class="cards"){
                 div(class="flex cards--container"){
-                    a(class="card") {
+                    a(class="card card-1") {
                         img(class="card--image", src="assets/images/roses.jpg")
                         h3(class="card--title"){"Jotain"}
                     }
-                    a(class="card") {
+                    a(class="card card-2") {
                         img(class="card--image", src="assets/images/koodari.jpg")
                         h3(class="card--title"){"CV"}
                     }
-                    a(class="card") {
+                    a(class="card card-3") {
                         img(class="card--image", src="assets/images/yeller.jpg")
                         h3(class="card--title"){"Bio"}
                     }
