@@ -211,11 +211,6 @@ function getImports() {
         const ret = getObject(arg0).body;
         return isLikeNone(ret) ? 0 : addHeapObject(ret);
     };
-    imports.wbg.__wbg_createComment_0df3a4d0d91032e7 = function(arg0, arg1, arg2) {
-        var v0 = getCachedStringFromWasm0(arg1, arg2);
-        const ret = getObject(arg0).createComment(v0);
-        return addHeapObject(ret);
-    };
     imports.wbg.__wbg_createElement_976dbb84fe1661b5 = function() { return handleError(function (arg0, arg1, arg2) {
         var v0 = getCachedStringFromWasm0(arg1, arg2);
         const ret = getObject(arg0).createElement(v0);
@@ -381,7 +376,7 @@ function initSync(module) {
 
 async function init(input) {
     if (typeof input === 'undefined') {
-        input = new URL('sycamore_site-2534008c3f467cfc_bg.wasm', import.meta.url);
+        input = new URL('sycamore_site-62ccdfb44ac68c10_bg.wasm', import.meta.url);
     }
     const imports = getImports();
 
